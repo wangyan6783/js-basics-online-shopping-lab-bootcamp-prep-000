@@ -46,8 +46,16 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
-  
+  for (var i = 0; i < cart.length; i++) {
+    var yourItem = cart[i];
+    var name = yourItem.itemName;
+    if (name === item) {
+      var index = i;
+      cart.splice(index, 1);
+      return cart;
+    }
+  }
+  return ``
 }
 
 function placeOrder(cardNumber) {
