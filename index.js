@@ -25,12 +25,12 @@ function viewCart() {
     var name = item.itemName;
     var price = `$${item.itemPrice}`;
     if (i === cart.length - 1) {
-      yourCart += `${name} at ${price}, `;
+      yourCart += `and ${name} at ${price}.`;
     } else {
-      
+      yourCart += `${name} at ${price}, `;
     }
-    yourCart += `${name} at ${price}, `;
   }
+  return yourCart;
 }
 
 function total() {
