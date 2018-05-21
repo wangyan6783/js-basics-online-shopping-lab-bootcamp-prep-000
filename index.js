@@ -19,10 +19,15 @@ function viewCart() {
   if (cart.length === 0) {
     return `Your shopping cart is empty.`;
   }
-  var yourCart = 
+  var yourCart = `In your cart, you have `;
   for (var i = 0; i < cart.length; i++) {
     var item = cart[i];
     var name = item.itemName;
+    var price = `$${item.itemPrice}`;
+    if (i === cart.length - 1) {
+      
+    }
+    yourCart += `${name} at ${price}, `;
   }
 }
 
