@@ -61,6 +61,8 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   if (cardNumber) {
     var totalPrice = `$` + total();
-    return `Your total cost is ${totalPrice}, which will be charged to the card 83296759.`
+    return `Your total cost is ${totalPrice}, which will be charged to the card ${cardNumber}.`;
+  } else {
+    return 
   }
 }
