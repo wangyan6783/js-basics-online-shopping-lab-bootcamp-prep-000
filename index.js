@@ -24,10 +24,10 @@ function viewCart() {
     var item = cart[i];
     var name = item.itemName;
     var price = `$${item.itemPrice}`;
-    if (i === cart.length - 1) {
-      yourCart += `and ${name} at ${price}.`;
-    } else if (cart.length === 1) {
+    if (cart.length === 1) {
       yourCart += `${name} at ${price}.`;
+    } else if (i === cart.length - 1) {
+      yourCart += `and ${name} at ${price}.`;
     } else {
       yourCart += `${name} at ${price}, `;
     }
