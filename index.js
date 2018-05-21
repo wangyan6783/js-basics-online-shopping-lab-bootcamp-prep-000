@@ -25,6 +25,8 @@ function viewCart() {
     var name = item.itemName;
     var price = `$${item.itemPrice}`;
     if (i === cart.length - 1) {
+      yourCart += `${name} at ${price}, `;
+    } else {
       
     }
     yourCart += `${name} at ${price}, `;
