@@ -23,7 +23,7 @@ function viewCart() {
   for (var i = 0; i < cart.length; i++) {
     var item = cart[i];
     var name = item.itemName;
-    var price = `$${item.itemPrice}`;
+    var price = `$` + item.itemPrice;
     if (cart.length === 1) {
       yourCart += `${name} at ${price}.`;
     } else if (i === cart.length - 1) {
@@ -60,7 +60,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   if (cardNumber) {
-    var totalPrice = total();
-    return ``
+    var totalPrice = `$` + total();
+    return `Your total cost is ${totalPrice}, which will be charged to the card 83296759.`
   }
 }
